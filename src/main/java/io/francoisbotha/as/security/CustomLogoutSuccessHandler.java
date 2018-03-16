@@ -24,7 +24,7 @@ public class CustomLogoutSuccessHandler
 
 
     private static final String BEARER_AUTHENTICATION = "Bearer ";
-    private static final String HEADER_AUTHORIZATION = "authorization";
+    private static final String HEADER_AUTHORIZATION = "Authorization";
 
     @Autowired
     private TokenStore tokenStore;
