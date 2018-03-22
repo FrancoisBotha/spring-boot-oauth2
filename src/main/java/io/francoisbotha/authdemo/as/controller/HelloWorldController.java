@@ -1,4 +1,4 @@
-package io.francoisbotha.as.controller;
+package io.francoisbotha.authdemo.as.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,13 +6,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/secure")
-public class SecureController {
+@RequestMapping("/hello")
+public class HelloWorldController {
+
 
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public String sayHello() {
-        return "Secure Hello!";
+        return "Hello User!";
     }
 
 }

@@ -1,4 +1,4 @@
-package io.francoisbotha.as.security;
+package io.francoisbotha.authdemo.as.security;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,9 +10,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import io.francoisbotha.as.domain.Authority;
-import io.francoisbotha.as.domain.User;
-import io.francoisbotha.as.repository.UserRepository;
+import io.francoisbotha.authdemo.as.domain.Authority;
+import io.francoisbotha.authdemo.as.domain.User;
+import io.francoisbotha.authdemo.as.repository.UserRepository;
 
 import java.util.ArrayList;
 import java.util.Collection;

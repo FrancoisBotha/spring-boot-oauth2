@@ -1,3 +1,11 @@
+CREATE TABLE `countries` (
+`id` int(11) NOT NULL auto_increment,
+`country_code` varchar(2) NOT NULL default '',
+`country_name` varchar(100) NOT NULL default '',
+`region_cde` varchar(100) NOT NULL default '',
+PRIMARY KEY (`id`)
+);
+
 CREATE TABLE user (
   username VARCHAR(50) NOT NULL PRIMARY KEY,
   email VARCHAR(50),

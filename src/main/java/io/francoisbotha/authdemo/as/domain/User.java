@@ -1,4 +1,4 @@
-package io.francoisbotha.as.domain;
+package io.francoisbotha.authdemo.as.domain;
 
 import org.hibernate.validator.constraints.Email;
 

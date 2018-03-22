@@ -1,4 +1,6 @@
-package io.francoisbotha.as.config;
+package io.francoisbotha.authdemo.as.config;
+
+import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,11 +22,10 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-import io.francoisbotha.as.security.Authorities;
-import io.francoisbotha.as.security.CustomAuthenticationEntryPoint;
-import io.francoisbotha.as.security.CustomLogoutSuccessHandler;
+import io.francoisbotha.authdemo.as.security.Authorities;
+import io.francoisbotha.authdemo.as.security.CustomAuthenticationEntryPoint;
+import io.francoisbotha.authdemo.as.security.CustomLogoutSuccessHandler;
 
-import javax.sql.DataSource;
 
 @Configuration
 public class OAuth2Configuration {
@@ -54,12 +55,13 @@ public class OAuth2Configuration {
                     .requireCsrfProtectionMatcher(new AntPathRequestMatcher("/oauth/authorize"))
                     .disable()
                     .headers()
-                    .frameOptions().disable()
+                    .frameOptions().disable().and()
                     .sessionManagement()
                     .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                     .and()
                     .authorizeRequests()
                     .antMatchers("/hello/").permitAll()
+                    .antMatchers("/countries/").permitAll()
                     .antMatchers("/secure/**").authenticated();
 
         }

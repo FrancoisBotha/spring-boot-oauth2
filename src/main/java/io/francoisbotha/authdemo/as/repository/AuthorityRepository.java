@@ -1,9 +1,9 @@
-package io.francoisbotha.as.repository;
+package io.francoisbotha.authdemo.as.repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import io.francoisbotha.as.domain.Authority;
+import io.francoisbotha.authdemo.as.domain.Authority;
 
 public interface AuthorityRepository extends JpaRepository<Authority, String> {
 }

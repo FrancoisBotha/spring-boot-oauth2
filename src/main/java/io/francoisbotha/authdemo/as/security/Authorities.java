@@ -1,4 +1,4 @@
-package io.francoisbotha.as.security;
+package io.francoisbotha.authdemo.as.security;
 
 public enum Authorities {
 

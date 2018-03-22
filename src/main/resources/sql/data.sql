@@ -9,3 +9,17 @@ INSERT INTO user_authority (username,authority) VALUES ('rajith', 'ROLE_USER');
 INSERT INTO user_authority (username,authority) VALUES ('user', 'ROLE_USER');
 INSERT INTO user_authority (username,authority) VALUES ('admin', 'ROLE_USER');
 INSERT INTO user_authority (username,authority) VALUES ('admin', 'ROLE_ADMIN');
+
+
+INSERT INTO `countries` VALUES (null, 'AO', 'Angola', 'EMEA');
+INSERT INTO `countries` VALUES (null, 'AU', 'Australia', 'ANZ');
+INSERT INTO `countries` VALUES (null, 'AT', 'Austria', 'EMEA');
+INSERT INTO `countries` VALUES (null, 'BW', 'Botswana', 'EMEA');
+INSERT INTO `countries` VALUES (null, 'BR', 'Brazil', 'LATAM');
+INSERT INTO `countries` VALUES (null, 'CA', 'Canada', 'NORTHAM');
+INSERT INTO `countries` VALUES (null, 'CL', 'Chile', 'LATAM');
+INSERT INTO `countries` VALUES (null, 'CN', 'China', 'APAC');
+INSERT INTO `countries` VALUES (null, 'CO', 'Colombia', 'LATAM');
+INSERT INTO `countries` VALUES (null, 'FR', 'France', 'EMEA');
+INSERT INTO `countries` VALUES (null, 'US', 'United States', 'NORTHAM');
+INSERT INTO `countries` VALUES (null, 'ZW', 'Zimbabwe', 'EMEA');

@@ -1,10 +1,10 @@
-package io.francoisbotha.as.repository;
+package io.francoisbotha.authdemo.as.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import io.francoisbotha.as.domain.User;
+import io.francoisbotha.authdemo.as.domain.User;
 
 public interface UserRepository extends JpaRepository<User, String> {
 
